@@ -423,17 +423,16 @@
   </build>
 
   <distributionManagement>
-
-    <site>
-      <id>qos_ch</id>
-      <url>scp://te.qos.ch/var/www/logback.qos.ch/htdocs/</url>
-    </site>
-
     <repository>
-      <id>sonatype-nexus-staging</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <id>evolveum-nexus</id>
+      <name>Internal Releases</name>
+      <url>https://nexus.evolveum.com/nexus/content/repositories/releases/</url>
     </repository>
-
+    <snapshotRepository>
+      <id>evolveum-nexus</id>
+      <name>Internal Snapshots</name>
+      <url>https://nexus.evolveum.com/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <profiles>
